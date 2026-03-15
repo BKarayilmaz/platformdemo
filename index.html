@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Endless Skill Runner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hud">
+      <h1>Endless Skill Runner</h1>
+      <p>
+        Skill sec: <strong>Z</strong> Jump Pad, <strong>X</strong> Dash Gate, <strong>C</strong> Barrier
+      </p>
+      <p>
+        Sol tik: secili skilli yerlestir. <strong>R</strong>: yeniden baslat.
+      </p>
+      <div id="status"></div>
+    </section>
+    <section class="game-wrap" aria-label="Oyun alani">
+      <div class="skill-strip" aria-label="Secili skill gostergesi">
+        <button id="skill-z" class="skill-chip is-selected" data-skill="z" type="button" aria-label="Z skill sec">
+          <span class="chip-box chip-z"></span>
+          <span class="chip-label">z</span>
+          <span class="chip-name">Jump Pad</span>
+        </button>
+        <button id="skill-x" class="skill-chip" data-skill="x" type="button" aria-label="X skill sec">
+          <span class="chip-box chip-x"></span>
+          <span class="chip-label">x</span>
+          <span class="chip-name">Dash Gate</span>
+        </button>
+        <button id="skill-c" class="skill-chip" data-skill="c" type="button" aria-label="C skill sec">
+          <span class="chip-box chip-c"></span>
+          <span class="chip-label">c</span>
+          <span class="chip-name">Barrier</span>
+        </button>
+      </div>
+      <canvas id="game" width="1100" height="560" aria-label="2D platform oyunu"></canvas>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
